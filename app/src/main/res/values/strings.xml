@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HelloWorld1</string>
+    <string name="inputView">Greet</string>
+    <string name="goodbye">GoodBye</string>
+    <string name="greetingTextView">Enter name below!</string>
+</resources>

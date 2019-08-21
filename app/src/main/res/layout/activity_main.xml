@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/greetingView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/greetingTextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:clickable="false"
+        android:enabled="false"
+        android:isScrollContainer="true"
+        android:text="@string/greetingTextView"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textIsSelectable="false"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/inputTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:singleLine="false"
+        android:textColor="#A83F51B5"
+        android:importantForAutofill="no"
+        android:inputType="" tools:targetApi="o"/>
+
+    <Button
+        android:id="@+id/greetButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EB3F51B5"
+        android:text="@string/inputView" />
+
+    <Button
+        android:id="@+id/GoodByeButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A63F51B5"
+        android:text="@string/goodbye" />
+
+</LinearLayout>
