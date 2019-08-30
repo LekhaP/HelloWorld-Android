@@ -2,6 +2,13 @@
 
 <layout>
 
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.helloworld1.HelloWorldViewModel" />
+    </data>
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/greeting_view"
@@ -19,7 +26,7 @@
             android:clickable="false"
             android:enabled="false"
             android:isScrollContainer="true"
-            android:text="@string/greetingTextView"
+            android:text="@{viewModel.greetingText}"
             android:textAlignment="center"
             android:textColor="#3F51B5"
             android:textIsSelectable="false"
@@ -34,6 +41,7 @@
             android:importantForAutofill="no"
             android:inputType=""
             android:singleLine="false"
+            android:text="@={viewModel.inputText}"
             android:textColor="#A83F51B5"
             tools:targetApi="o" />
 
@@ -42,6 +50,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#EB3F51B5"
+            android:onClick="@{()->viewModel.onGreetActionClicked()}"
             android:text="@string/inputView" />
 
         <Button
@@ -49,6 +58,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#A63F51B5"
+            android:onClick="@{()->viewModel.onGoodByeActionClicked()}"
             android:text="@string/goodbye" />
 
     </LinearLayout>
